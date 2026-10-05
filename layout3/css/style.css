@@ -1,0 +1,145 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, main, main + section{
+  height: 600px;
+}
+header {
+  width: 15%;
+  height:600px;
+}
+
+header, main, main + section{
+  float: left;
+}
+
+main{
+  max-width: 65%;
+}
+
+main + section{
+  max-width: 30%;
+
+
+}
+
+main + section h2{
+  margin-top: 0;
+}
+
+
+
+footer{
+  width:85%;
+  margin-left:15%;
+}
+
+footer > * {
+  float: left;
+  width: 28.3%;
+}
+
+footer h4{
+  width: 100%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+header nav ul{
+  padding: 0;
+}
+
+header{
+  padding-left: 2%;
+}
+
+header nav ul{
+  margin-top: 5%;
+}
+
+header nav ul li{
+  list-style-type: none;
+  padding: 2%;
+  margin-bottom: 2%;
+  color: grey;
+}
+
+header > * {
+  width: 100%;
+}
+
+header form input{
+  max-width: 100%;
+  margin-top:30px;
+}
+
+header a{
+  text-decoration: none;
+}
+
+header a:first-child:link {
+
+  color: orange;
+}
+
+header img{
+  width: 30%;
+}
+
+main img{
+  max-width: 100%;
+}
+
+main span{
+  display: block;
+}
+
+main + section section {
+  border-bottom: 1px solid silver;
+}
+
+main + section section:last-child{
+  border: 0;
+}
+
+footer img{
+  width: 30%;
+}
+
+footer{
+  clear: both;
+  height: 300px;
+}
+
+footer > * {
+  margin-left:3%;
+}
+
+footer h4{
+  margin: 0 0 0 3%;
+}
