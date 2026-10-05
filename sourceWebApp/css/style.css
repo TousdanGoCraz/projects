@@ -1,0 +1,192 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size: 62.5%;
+  color: rgb(35, 24, 160);
+  background: rgb(246	249	252);
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 50px;
+  
+}
+
+header > * {
+  float: left;
+  width: 25%;
+}
+
+header nav ul li{
+  float: left;
+  list-style-type: none;
+  margin-right:10%;
+}
+header img {
+  display: none;
+}
+
+header nav{
+  width: 50%;
+}
+
+header a{
+  text-align: end;
+  padding: 0 3rem 0 0;
+}
+
+main section{
+  width: 50%;
+  float: left;
+}
+
+main section + section img{
+  max-width: 100%;
+}
+
+main span{
+  display: block;
+  font-size: 0.9rem;
+}
+
+main section:first-child{
+  padding-left: 8%;
+  padding-right: 10%;
+}
+
+main section h1{
+  font-size: 3.1rem;
+  margin-top: 1rem;
+}
+
+main section p{
+  font-size: 1.2rem;
+}
+
+main section form{
+  width: 100%;
+}
+
+main section form input[type = "text"]{
+  width: 70%;
+  padding: 0.5rem;
+}
+
+main section form input[type="submit"]{
+  width: 18%;
+  padding: 0.5rem;
+  color: white;
+  background-color: blue;
+}
+
+main + section{
+  height: 300px;
+  clear: both;
+  margin-left: auto;
+  width: 92%;
+}
+
+main + section section{
+  width: 25%;
+  float: left;
+  
+}
+
+main + section section h2{
+  font-size: 1.3rem;
+}
+
+main + section section p{
+  font-size: 1.1rem;
+}
+
+main + section section a:link{
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+@media screen and (max-width: 375px){
+  header nav, header a{
+    display: none;
+  }
+
+
+  header img{
+    display: inline-block;
+    width: 50px;
+    margin: 4px;
+  }
+
+  header h3{
+    width: 50%;
+    margin: 0;
+    margin-left:20%;
+    margin-top: 8px;
+    font-size: 1.4rem;
+
+  }
+  main{
+    height: 600px;
+  }
+
+  main section{
+    width: 100%;
+    padding:5px;
+
+  }
+
+
+  main section span{
+    padding-top: 20px;
+  }
+
+  main section h1{
+    font-size: 1.8rem;
+  }
+
+  main section form input[type="text"],
+  main section form input[type="submit"]{
+    width: 100%;
+  }
+
+  main section img{
+    max-width: 100%;
+    width: 100%;
+  }
+
+  main + section section{
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+}
