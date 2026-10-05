@@ -1,0 +1,185 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background-color: rgb(105, 117, 136);
+     color: white;
+}
+
+.alternate-background{
+     background-color: white;
+     color:rgb(105, 117, 136);
+}
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.main-nav-list{
+     display: flex;
+     flex-direction: row;
+     list-style-type:  none;
+     justify-content: space-around;
+     
+}
+
+.main-nav-list li{
+     text-transform: uppercase;
+     padding-top: 8px;
+}
+
+.main-nav-logo{
+     flex-basis: 80%;
+     text-align: center;
+}
+
+
+.main-landing-page{
+     height: 400px;
+     max-width: 90%;
+     margin: auto;
+     text-align: center;
+}
+
+.base-layout{
+     height: 400px;
+     text-align: center;
+     max-width: 50%;
+     margin: auto;
+     padding: 40px;
+}
+
+.our-referal-portals{
+     display: flex;
+     justify-content: space-around;
+     height: 400px;
+}
+
+.our-referal-portals section{
+     text-align: center;
+     
+     margin-top: 5%;
+     max-width: 40%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+.main-nav-button{
+     border: 1px solid white;
+     border-radius: 3px;
+     padding: 8px;
+     background-color: white;
+}
+
+.main-nav-button a:visited,
+.main-nav-button a:link{
+     color:  rgb(105, 117, 136);
+}
+
+a{
+     text-decoration: none;
+}
+
+.main-landing-page h1{
+     font-size: 64px;
+}
+
+.main-landing-page p{
+     font-size: 26px;
+}
+.base-layout h2,
+.base-layout h3{
+     font-weight: 800;
+}
+.base-layout h2{
+     text-transform: uppercase;
+     font-size: 32px;
+     margin-bottom: 0;
+}
+
+.base-layout h3{
+     text-transform: uppercase;
+     font-size: 25px;
+}
+
+.base-layout p{
+     font-size: 20px;
+}
+
+
+footer {
+     clear: both;
+}
+
+footer > section{
+     width: 10%;
+     float: left;
+}
+
+footer aside{
+     width: 100%;
+     clear: both;
+}
+
+.footer-section-one ul{
+     width: 100%;
+     height: 20px;
+     padding: 0;
+     margin-top: 0;
+}
+
+.footer-section-one ul li{
+     list-style-type: none;
+     float: left;
+     width: 50%;
+
+
+}
+
+.footer-section-one > * {
+     height: 20%;
+}
+
+
+.footer-section-one ul:first-child li{
+     list-style-type: none;
+     float: left;
+     width: 30%;
+
+}
+
+.footer-section-one span{
+     display: block;
+}
+
+.footer-section-one {
+     margin-right: 75%;
+     height: 200px;
+}
