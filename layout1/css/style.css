@@ -1,0 +1,122 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+  color: black;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background: black;
+  height: 4rem;
+}
+
+header nav > *{
+  float: left;
+  width: 10%;
+  padding-top:1rem;
+}
+
+header nav ul{
+  width: 70%;
+  list-style-type: none;
+  margin: 0;
+}
+
+header nav ul li{
+  font-size: 1.5rem;
+  float: left;
+  margin: 0 2%;
+}
+
+
+nav form input{
+  max-width: 100%;
+}
+
+main{
+  height: 50rem;
+}
+
+main > section{
+  width: 50%;
+  float: left;
+  height: 50rem;
+  margin-top: 2%;
+}
+
+main section:first-child{
+  width: 100%;
+  height: 3rem;
+}
+
+main > section:first-child *{
+  width: 50%;
+  float: left;
+  margin: 1rem 0;
+}
+
+main > section:first-child span{
+  text-align: end;
+  font-size: 2rem;
+  padding-right:1%;
+}
+
+main >section:last-child > section{
+  width: 50%;
+  float: left;
+  height:25rem;
+}
+
+main + section{
+  height: 30rem;
+  max-width: 100%;
+  clear: both;
+}
+
+main + section section{
+  max-width: 33.33%;
+  float: left;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+a:link{
+  color:white;
+  text-decoration: none;
+}
+
+h4{
+  font-size: 2rem;
+}
+
+main > section:nth-child(2){
+  position: relative;
+  top: 25rem;
+}
+
